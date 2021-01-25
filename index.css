@@ -21,7 +21,8 @@
     text-align: left;
     display: block;
     overflow-x: auto;
-    padding: .5em;
+    padding: 2px 4px;
     background: #9999;
+    color: #fefefe;
     font-family: monospace, monospace;
 }
