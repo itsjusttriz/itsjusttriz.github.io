@@ -22,7 +22,7 @@
     display: block;
     overflow-x: auto;
     padding: 2px 4px;
-    background: #9999;
+    background: rgb(61, 61, 61);
     color: #fefefe;
     font-family: monospace, monospace;
 }
