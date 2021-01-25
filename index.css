@@ -2,7 +2,7 @@
     background-color: #1e0329;
 }
 
-#bodyStyle .cmdBody {
+.cmdBody {
     font-size: large;
     background-color: #1e0329;
 }
@@ -19,9 +19,13 @@
 }
 
 .CodeBlock {
-    display: block;
-    overflow-x: auto;
-    padding: 0.5em;
-    background: #2b2b2b;
-    color: #bababa;
+    line-height: 1.15;
+    font-family: monospace, monospace;
+    font-size: 1em;
+    tab-size: 2;
+    white-space: pre-wrap;
+    margin: 16px;
+    padding: 8px;
+    background: #1b1b1b;
+    color: #999;
 }
