@@ -19,6 +19,7 @@
 }
 
 .CodeBlock {
+    display: block;
     line-height: 1.15;
     font-family: monospace, monospace;
     font-size: 1em;
