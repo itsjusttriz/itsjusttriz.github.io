@@ -14,11 +14,14 @@
 }
 
 .CodeBlock {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     text-align: left;
     display: block;
     overflow-x: auto;
     padding: .5em;
     background: #9999;
-    color: #fefefe;
     font-family: monospace, monospace;
 }
