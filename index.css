@@ -2,8 +2,9 @@
     background-color: #1e0329;
 }
 
-.cmdBody {
+#bodyStyle .cmdBody {
     font-size: large;
+    background-color: #1e0329;
 }
 
 .pageHeader {
