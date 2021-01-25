@@ -12,3 +12,13 @@
     text-align: center;
     color: rgb(250, 0, 167);
 }
+
+.CodeBlock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: #000000;
+}
