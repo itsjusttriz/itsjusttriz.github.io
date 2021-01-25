@@ -27,6 +27,8 @@
     white-space: pre-wrap;
     margin: 16px;
     padding: 8px;
+    border-right-width: 20px;
+    border-left-width: 20px;
     background: #1b1b1b;
     color: #999;
 }
