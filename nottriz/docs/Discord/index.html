@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <link rel="stylesheet"
+        href="https://github.githubassets.com/assets/gist-embed-24bb8e840bfabd0d17bac31daf27f75b.css">
+</head>
+
+<body style="background-color: black;">
+    <div id="gist107592420" class="gist">
+        <div class="gist-file">
+            <div class="gist-data">
+                <div class="js-gist-file-update-container js-task-list-container file-box">
+                    <div id="file-discord_index-md" class="file my-2">
+
+                        <div id="file-discord_index-md-readme" class="bodyStyle">
+                            <article class="markdown-body entry-content container-lg" itemprop="text">
+                                <h1><a id="user-content-global-file" class="anchor" aria-hidden="true"
+                                        href="#global-file"><svg class="octicon octicon-link" viewBox="0 0 16 16"
+                                            version="1.1" width="16" height="16" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                                            </path>
+                                        </svg></a>Global File</h1>
+                                <h2><a id="user-content-notes" class="anchor" aria-hidden="true" href="#notes"><svg
+                                            class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16"
+                                            height="16" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                                            </path>
+                                        </svg></a><strong>Notes</strong></h2>
+                                <p><strong>1)</strong> Bot prefix is <code>n!</code> (<em>e.g.
+                                        <code>n!debug</code></em>)</p>
+                                <p><strong>2)</strong> The default Embed Color is <code>Purple</code>.</p>
+                                <br>
+                                <h2><a id="user-content-startup-event" class="anchor" aria-hidden="true"
+                                        href="#startup-event"><svg class="octicon octicon-link" viewBox="0 0 16 16"
+                                            version="1.1" width="16" height="16" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                                            </path>
+                                        </svg></a><strong>Startup Event</strong></h2>
+                                <ul>
+                                    <li>Prints <code>===&gt; READY! &lt;===</code></li>
+                                    <li>Parses Twitch accessToken on interval</li>
+                                    <li>Continuously polls Twitch API for Stream Status for various casters.</li>
+                                </ul>
+                                <br>
+                                <h2><a id="user-content-message-event" class="anchor" aria-hidden="true"
+                                        href="#message-event"><svg class="octicon octicon-link" viewBox="0 0 16 16"
+                                            version="1.1" width="16" height="16" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
+                                            </path>
+                                        </svg></a><strong>Message Event</strong></h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Command</th>
+                                            <th>Description</th>
+                                            <th>Usage</th>
+                                            <th>Permission</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong><code>invite</code></strong></td>
+                                            <td>DMs the Bot's invite link.</td>
+                                            <td>-</td>
+                                            <td><code>@everyone</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong><code>support</code></strong></td>
+                                            <td>DMs the Discord invite to the support server.</td>
+                                            <td>-</td>
+                                            <td><code>"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong><code>roadmap</code></strong></td>
+                                            <td>DMs the link to the Development Roadmap.</td>
+                                            <td>-</td>
+                                            <td><code>"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong><code>math</code></strong></td>
+                                            <td>Solves the given equation. No spaces allowed.</td>
+                                            <td><code>n!math 2+2</code></td>
+                                            <td><code>"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong><code>serverinfo</code></strong></td>
+                                            <td>Provides convenient information about the server.</td>
+                                            <td>-</td>
+                                            <td><code>@guildOwner</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong><code>spam</code></strong></td>
+                                            <td>Spams given message <code>x</code> times.</td>
+                                            <td><code>n!spam &lt;x&gt; &lt;message&gt;</code></td>
+                                            <td><code>@botOwner</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong><code>setpresence</code></strong></td>
+                                            <td>Sets the activity of the client.</td>
+                                            <td><code>n!setpresence &lt;activity&gt;</code></td>
+                                            <td><code>"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong><code>eval</code></strong></td>
+                                            <td>Javascript Eval() command.</td>
+                                            <td><code>n!eval &lt;query&gt;</code></td>
+                                            <td><code>"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong><code>debug</code></strong></td>
+                                            <td>Shows client version and uptime.</td>
+                                            <td>-</td>
+                                            <td><code>"</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="gist-meta">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
+</body>
+
+</html>
