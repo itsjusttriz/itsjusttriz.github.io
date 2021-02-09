@@ -1,72 +1,74 @@
-<script>
-    const parent = 'itsjusttriz.github.io'
-    function funcA() {
-        let val = document.getElementById('newURLa').value;
-        url1a = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
-        url1b = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
-        document.getElementById('streama').src = url1a;
-        document.getElementById('chata').src = url1b;
-    };
-    function funcB() {
-        let val = document.getElementById('newURLb').value;
-        url1a = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
-        url1b = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
-        document.getElementById('streamb').src = url1a;
-        document.getElementById('chatb').src = url1b;
-    };
-    function funcC() {
-        let val = document.getElementById('newURLc').value;
-        url1a = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
-        url1b = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
-        document.getElementById('streamc').src = url1a;
-        document.getElementById('chatc').src = url1b;
-    };
-    function funcD() {
-        let val = document.getElementById('newURLd').value;
-        url1a = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
-        url1b = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
-        document.getElementById('streamd').src = url1a;
-        document.getElementById('chatd').src = url1b;
-    };
-</script>
-<input type="button" id="mybutton" value="new Stream" onclick="funcA()" />
-<input type="text" id="newURLa" />
-<p>
-    <iframe width="700" height="400" id="streama" src="">
+<body style="background-color: #00455c;">
+    <script>
+        const parent = 'itsjusttriz.github.io'
+        function funcA() {
+            let val = document.getElementById('newURLa').value;
+            url1a = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
+            url1b = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
+            document.getElementById('streama').src = url1a;
+            document.getElementById('chata').src = url1b;
+        };
+        function funcB() {
+            let val = document.getElementById('newURLb').value;
+            url1a = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
+            url1b = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
+            document.getElementById('streamb').src = url1a;
+            document.getElementById('chatb').src = url1b;
+        };
+        function funcC() {
+            let val = document.getElementById('newURLc').value;
+            url1a = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
+            url1b = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
+            document.getElementById('streamc').src = url1a;
+            document.getElementById('chatc').src = url1b;
+        };
+        function funcD() {
+            let val = document.getElementById('newURLd').value;
+            url1a = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
+            url1b = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
+            document.getElementById('streamd').src = url1a;
+            document.getElementById('chatd').src = url1b;
+        };
+    </script>
+    <input type="button" id="mybutton" value="new Stream" onclick="funcA()" />
+    <input type="text" id="newURLa" />
+    <p>
+        <iframe width="700" height="400" id="streama" src="">
 
-    </iframe>
-    <iframe width="700" height="400" id="chata" src="">
+        </iframe>
+        <iframe width="700" height="400" id="chata" src="">
 
-    </iframe>
-</p>
-<br><input type="button" id="mybutton" value="new Stream" onclick="funcB()" />
-<input type="text" id="newURLb" />
-<p>
-    <iframe width="700" height="400" id="streamb" src="">
+        </iframe>
+    </p>
+    <br><input type="button" id="mybutton" value="new Stream" onclick="funcB()" />
+    <input type="text" id="newURLb" />
+    <p>
+        <iframe width="700" height="400" id="streamb" src="">
 
-    </iframe>
-    <iframe width="700" height="400" id="chatb" src="">
+        </iframe>
+        <iframe width="700" height="400" id="chatb" src="">
 
-    </iframe>
-</p>
-<br><input type="button" id="mybutton" value="new Stream" onclick="funcC()" />
-<input type="text" id="newURLc" />
-<p>
-    <iframe width="700" height="400" id="streamc" src="">
+        </iframe>
+    </p>
+    <br><input type="button" id="mybutton" value="new Stream" onclick="funcC()" />
+    <input type="text" id="newURLc" />
+    <p>
+        <iframe width="700" height="400" id="streamc" src="">
 
-    </iframe>
-    <iframe width="700" height="400" id="chatc" src="">
+        </iframe>
+        <iframe width="700" height="400" id="chatc" src="">
 
-    </iframe>
-</p>
-<br><input type="button" id="mybutton" value="new Stream" onclick="funcD()" />
-<input type="text" id="newURLd" />
-<p>
-    <iframe width="700" height="400" id="streamd" src="">
+        </iframe>
+    </p>
+    <br><input type="button" id="mybutton" value="new Stream" onclick="funcD()" />
+    <input type="text" id="newURLd" />
+    <p>
+        <iframe width="700" height="400" id="streamd" src="">
 
-    </iframe>
-    <iframe width="700" height="400" id="chatd" src="">
+        </iframe>
+        <iframe width="700" height="400" id="chatd" src="">
 
-    </iframe>
-</p>
-<br>
+        </iframe>
+    </p>
+    <br>
+</body>
