@@ -1,4 +1,10 @@
-<body style="background-color: #00455c;">
+<style>
+    .Buttons {
+        margin-left: 40%;
+    }
+</style>
+
+<body style="background-color: #00455c; margin-left: 50px;">
     <script>
         const parent = 'itsjusttriz.github.io'
         function funcA() {
@@ -30,17 +36,17 @@
             document.getElementById('chatd').src = url1b;
         };
     </script>
-    <input type="button" id="mybutton" value="new Stream" onclick="funcA()" />
+    <input class="Buttons" type="button" id="mybutton" value="new Stream" onclick="funcA()" />
     <input type="text" id="newURLa" />
     <p>
         <iframe width="700" height="400" id="streama" src="">
-
         </iframe>
         <iframe width="700" height="400" id="chata" src="">
 
         </iframe>
     </p>
-    <br><input type="button" id="mybutton" value="new Stream" onclick="funcB()" />
+    <br>
+    <input class="Buttons" type="button" id="mybutton" value="new Stream" onclick="funcB()" />
     <input type="text" id="newURLb" />
     <p>
         <iframe width="700" height="400" id="streamb" src="">
@@ -50,7 +56,8 @@
 
         </iframe>
     </p>
-    <br><input type="button" id="mybutton" value="new Stream" onclick="funcC()" />
+    <br>
+    <input class="Buttons" type="button" id="mybutton" value="new Stream" onclick="funcC()" />
     <input type="text" id="newURLc" />
     <p>
         <iframe width="700" height="400" id="streamc" src="">
@@ -60,7 +67,8 @@
 
         </iframe>
     </p>
-    <br><input type="button" id="mybutton" value="new Stream" onclick="funcD()" />
+    <br>
+    <input class="Buttons" type="button" id="mybutton" value="new Stream" onclick="funcD()" />
     <input type="text" id="newURLd" />
     <p>
         <iframe width="700" height="400" id="streamd" src="">
