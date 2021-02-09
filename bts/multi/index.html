@@ -5,12 +5,12 @@
 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
 <!-- Create a Twitch.Player object. This will render within the placeholder div -->
-<script type="text/javascript">
+<script style="width: 300px;height: 500px;" type="text/javascript">
     function newStream(caster) {
         new Twitch.Player("CMCB-Multi", {
             channel: caster
         });
     }
 
-    newStream('domosplace')
+    newStream('domosplace');
 </script>
