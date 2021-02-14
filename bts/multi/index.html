@@ -19,15 +19,16 @@
             }
             function openStream(Element) {
                 let val = document.getElementById(`newURL${Element}`).value;
-                urlA = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}`;
+                urlA = `https://player.twitch.tv/?channel=${val}&player=popout&parent=${parent}&quality=medium`;
                 urlB = `https://www.twitch.tv/embed/${val}/chat?parent=${parent}`
                 document.getElementById(`stream${Element}`).src = urlA;
                 document.getElementById(`chat${Element}`).src = urlB;
             };
         </script>
-        <input class="Buttons" type="button" id="mybutton" value="Click to Open!" onclick="openStream('A')" />
+        <input class="Buttons" type="button" id="mybutton" value="&#128269" title="Find Stream"
+            onclick="openStream('A')" />
         <input type="text" id="newURLA" placeholder="Stream Name..." /><input class="Buttons" type="button"
-            id="mybutton" value="X" onclick="closeStream('A')" />
+            id="mybutton" value="X" value="&#10060" title="Close Player" onclick="closeStream('A')" />
         <p>
             <iframe width="700" height="400" id="streamA" src="">
             </iframe>
