@@ -52,7 +52,9 @@
                     urlA = `https://player.twitch.tv/?channel=${val}&player=popout&${parent}&quality=medium`;
                     urlB = `https://www.twitch.tv/embed/${val}/chat?${parent}`
                     document.getElementById(`stream${Element}`).src = urlA;
+                    document.getElementById(`stream${Element}`).style.display = 'block';
                     document.getElementById(`chat${Element}`).src = urlB;
+                    document.getElementById(`chat${Element}`).style.display = 'block';
                 };
             </script>
             <input class="Buttons" type="button" id="mybutton" value="&#128269" title="Find Stream"
