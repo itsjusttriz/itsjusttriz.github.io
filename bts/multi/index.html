@@ -100,80 +100,147 @@ Loading...
     </nav>
     <!-- NAVBAR-END -->
 
-    <div>
-        <!-- <input type="text" id="searchBar" placeholder="Stream Name..." /> -->
-        <button id="testButton" onclick="openStream()">Add Stream</button>
-        <br>
-        <div id="streamGroups" class="container"></div>
-    </div>
 
-    <script>
-        let streamCount = 0;
-        const parent = 'parent=itsjusttriz.github.io';
+    <title>MultiStream | itsjusttriz</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    </head>
 
-        function openStream() {
-            const getGroup = document.getElementById('streamGroups');
+    <body style="background: rgb(71, 45, 74);">
 
-            const lineBreak1 = document.createElement('br');
-            const lineBreak2 = document.createElement('br');
 
-            const createSearchBar = document.createElement('input');
-            createSearchBar.type = 'text';
-            createSearchBar.id = `searchBar${streamCount}`;
-            createSearchBar.placeholder = `Stream Name...`;
+        <!-- NAVBAR-START -->
+        <nav style="background: rgb(43, 24, 45);" class="navbar nav navbar-expand navbar-light">
+            <a style="color: white;" class="nav navbar-brand" href="/">ItsJustTriz</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            const createSearchButton = document.createElement('input');
-            createSearchButton.type = 'button';
-            createSearchButton.id = `searchButton${streamCount}`;
-            createSearchButton.onclick = "openStream()";
-            createSearchButton.value = "🔍";
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a style="color: white;" class="nav-link" href="/">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item justify-content-center">
+                        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Links
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Put Anchor Tags Here -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MSCB
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="rd/">Support</a>
+                            <a class="dropdown-item" href="@mscb/github/">Github</a>
+                            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Docs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="/@mscb/docs/@d/cmds/">Discord</a>
+                                <a class="dropdown-item" href="/@mscb/docs/@t/">Twitch</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="bts/multi/">MultiStream</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NAVBAR-END -->
 
-            getGroup.appendChild(createSearchBar);
-            getGroup.appendChild(createSearchButton);
-            getGroup.appendChild(lineBreak1);
+        <div>
+            <!-- <input type="text" id="searchBar" placeholder="Stream Name..." /> -->
+            <button id="testButton" onclick="openStream()">Add Stream</button>
+            <br>
+            <div id="streamGroups" class="container"></div>
+        </div>
 
-            const val = document.getElementById(`searchBar${streamCount}`).value
+        <script>
+            let streamCount = 0;
+            const parent = 'parent=itsjusttriz.github.io';
 
-            const streamDisplay = document.createElement('iframe');
-            const streamChat = document.createElement('iframe');
+            function openStream() {
+                const getGroup = document.getElementById('streamGroups');
 
-            streamDisplay.id = `stream${streamCount}`;
-            streamChat.id = `chat${streamCount}`;
+                const lineBreak1 = document.createElement('br');
+                const lineBreak2 = document.createElement('br');
 
-            streamDisplay.src = `https://player.twitch.tv/?channel=${val}&player=popout&${parent}&quality=medium`;
-            streamChat.src = `https://www.twitch.tv/embed/${val}/chat?${parent}`;
+                const createSearchBar = document.createElement('input');
+                createSearchBar.type = 'text';
+                createSearchBar.id = `searchBar${streamCount}`;
+                createSearchBar.placeholder = `Stream Name...`;
 
-            streamDisplay.width = '550';
-            streamChat.width = '550';
+                const createSearchButton = document.createElement('input');
+                createSearchButton.type = 'button';
+                createSearchButton.id = `searchButton${streamCount}`;
+                createSearchButton.onclick = "openStream()";
+                createSearchButton.value = "🔍";
 
-            streamDisplay.height = '350';
-            streamChat.height = '350';
+                getGroup.appendChild(createSearchBar);
+                getGroup.appendChild(createSearchButton);
+                getGroup.appendChild(lineBreak1);
 
-            streamDisplay.style.position = 'relative';
-            streamChat.style.position = 'relative';
+                const val = document.getElementById(`searchBar${streamCount}`).value
 
-            streamChat.style.display = 'inline-flex';
+                const streamDisplay = document.createElement('iframe');
+                const streamChat = document.createElement('iframe');
 
-            getGroup.appendChild(streamDisplay);
-            getGroup.appendChild(streamChat);
-            getGroup.appendChild(lineBreak2);
+                streamDisplay.id = `stream${streamCount}`;
+                streamChat.id = `chat${streamCount}`;
 
-            streamCount = streamCount += 1;
-        }
+                streamDisplay.src = `https://player.twitch.tv/?channel=${val}&player=popout&${parent}&quality=medium`;
+                streamChat.src = `https://www.twitch.tv/embed/${val}/chat?${parent}`;
 
-    </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
+                streamDisplay.width = '550';
+                streamChat.width = '550';
+
+                streamDisplay.height = '350';
+                streamChat.height = '350';
+
+                streamDisplay.style.position = 'relative';
+                streamChat.style.position = 'relative';
+
+                streamChat.style.display = 'inline-flex';
+
+                getGroup.appendChild(streamDisplay);
+                getGroup.appendChild(streamChat);
+                getGroup.appendChild(lineBreak2);
+
+                streamCount = streamCount += 1;
+            }
+
+        </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
 
 </html>
 <!-- === BASE PAGE END === -->
