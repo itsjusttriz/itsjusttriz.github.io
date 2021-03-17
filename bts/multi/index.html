@@ -131,7 +131,7 @@
             streamDisplay.id = `stream${streamCount}`;
             streamChat.id = `chat${streamCount}`;
 
-            streamDisplay.src = `https://player.twitch.tv/?channel=${val.toLowerCase()}&player=popout&${parent}&quality=medium`;
+            streamDisplay.src = `https://player.twitch.tv/?channel=${val.toLowerCase()}&player=popout&${parent}&allowfullscreen=true&quality=medium`;
             streamChat.src = `https://www.twitch.tv/embed/${val.toLowerCase()}/chat?${parent}`;
 
             streamDisplay.width = '550';
