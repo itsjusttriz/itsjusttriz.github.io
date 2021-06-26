@@ -1,3 +1,19 @@
+<<<<<<< Updated upstream
+=======
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="0; https://itsjusttriz.github.io/bts/multi/"></a>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+Loading...
+
+</html> -->
+<!-- === BASE PAGE START === -->
+>>>>>>> Stashed changes
 <!doctype html>
 <html lang="en">
 
@@ -42,11 +58,10 @@
                 <li class="nav-item active">
                     <a style="color: white;" class="nav-link" href="/">
                         Home
-                        <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item justify-content-center">
-                    <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a style="color: white;" class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Links
                     </a>
@@ -60,8 +75,8 @@
                         MSCB
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="rd/">Support</a>
-                        <a class="dropdown-item" href="@mscb/github/">Github</a>
+                        <a class="dropdown-item" href="/">Support</a>
+                        <a class="dropdown-item" href="/@mscb/github/">Github</a>
                         <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Docs
@@ -78,7 +93,7 @@
                         Tools
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="bts/multi/">MultiStream</a>
+                        <a class="dropdown-item" href="/bts/multi/">MultiStream</a>
                     </div>
                 </li>
             </ul>
@@ -95,6 +110,7 @@
     <script>
         let streamCount = 0;
         const parent = 'parent=itsjusttriz.github.io';
+<<<<<<< Updated upstream
 
         function openSearch() {
 
@@ -115,6 +131,37 @@
 
             getGroup.appendChild(createSearchBar);
             getGroup.appendChild(createSearchButton);
+=======
+
+        function openSearch() {
+
+            const getGroup = document.getElementById('streamGroups');
+
+            const lineBreak1 = document.createElement('br');
+
+            const createSearchBar = document.createElement('input');
+            createSearchBar.type = 'text';
+            createSearchBar.id = `searchBar${streamCount}`;
+            createSearchBar.placeholder = `Stream Name...`;
+
+            const createSearchButton = document.createElement('input');
+            createSearchButton.type = 'button';
+            createSearchButton.id = `searchButton${streamCount}`;
+            createSearchButton.addEventListener("click", openStream, false);
+            createSearchButton.value = "🔍";
+
+            const createRemoveButton = document.createElement('input');
+            createRemoveButton.type = 'button';
+            createRemoveButton.id = `removeButton${streamCount}`;
+            createRemoveButton.value = "X";
+            createRemoveButton.onclick = alert('Refresh the page to remove streams (This will remove all streams!)');
+            // createRemoveButton.title = 'test';
+            createRemoveButton.hidden = false;
+
+            getGroup.appendChild(createSearchBar);
+            getGroup.appendChild(createSearchButton);
+            getGroup.appendChild(createRemoveButton);
+>>>>>>> Stashed changes
             getGroup.appendChild(lineBreak1);
         }
 
@@ -154,6 +201,22 @@
             streamCount = streamCount += 1;
         }
 
+<<<<<<< Updated upstream
+=======
+        function removeStream(streamCount) {
+
+            const searchBar = document.getElementById(`searchBar${streamCount}`);
+            const searchButton = document.getElementById(`searchButton${streamCount}`);
+            const streamDisplay = document.getElementById(`stream${streamCount}`);
+            const streamChat = document.getElementById(`chat${streamCount}`);
+
+            searchBar.remove();
+            searchButton.remove();
+            streamDisplay.remove();
+            streamChat.remove();
+
+        }
+>>>>>>> Stashed changes
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -169,4 +232,8 @@
 </body>
 
 </html>
+<<<<<<< Updated upstream
 <!-- === BASE PAGE END === -->
+=======
+<!-- === BASE PAGE END === -->
+>>>>>>> Stashed changes
