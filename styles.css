@@ -23,6 +23,11 @@
     padding: 100px 0;
 }
 
+.btn-group .button a {
+    color: white;
+    text-decoration: none;
+}
+
 .btn-group .button {
     background-color: transparent;
     /* Green */
