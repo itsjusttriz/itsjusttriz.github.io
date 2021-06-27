@@ -2,16 +2,17 @@
     font-family: "Lucida Console", Courier, monospace;
 }
 
+img {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 500px;
+    height: 500px;
+}
+
 .Logo {
-    height: auto;
-    width: auto;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
     opacity: 1;
-    border: 1px;
-    border-radius: 12px;
 }
 
 .flexbox {
@@ -54,4 +55,5 @@
 .btn-group .restricted {
     opacity: 0.4;
     cursor: not-allowed;
+    text-decoration: line-through;
 }
