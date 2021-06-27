@@ -32,20 +32,18 @@
     <div class="flexbox">
         <div class="btn-group">
             <h2>ItsJustTriz</h2>
-            <button class="button">
-                <a href="http://twitch.triz.link/">Twitch</a>
-            </button>
-            <button class="button">
-                <a href="http://twitter.triz.link/">Twitter</a>
-            </button>
-            <button class="button">
-                <a href="http://discord.triz.link/">Discord</a>
-            </button>
-            <button class="button">
-                <a href="http://github.triz.link/">Github</a>
-            </button>
+            <button class="button" onclick="subdomain('twitch')">Twitch</button>
+            <button class="button" onclick="subdomain('twitter')">Twitter</button>
+            <button class="button" onclick="subdomain('discord')">Discord</button>
+            <button class="button" onclick="subdomain('github')">Github</button>
         </div>
     </div>
+
+    <script>
+        function subdomain(cname) {
+            return location.href = `http://${cname}.triz.link/`;
+        }
+    </script>
 </body>
 
 </html>
